@@ -1,1 +1,60 @@
-#area,#include{max-width:800px}@font-face{font-family:NotoNaskh;src:url('../font/noto_naskh.ttf') format('truetype');font-display:swap}body{font-family:NotoNaskh,Arial,sans-serif;background-color:#789461;margin:0;padding:0}.container{margin:8px auto;width:92%;text-align:center}.label-text{font-size:22px;font-weight:bolder;color:#294b29;margin-bottom:8px;margin-top:12px;display:block;direction:rtl}#include{width:100%;margin-top:20px}#area{border:.5px dotted #50623a;color:#343;font-family:NotoNaskh,Aptos,sans-serif;font-size:20px;height:calc(100vh - 40px);width:calc(100% - 20px);padding:12px;resize:none;overflow-y:scroll;direction:rtl;font-weight:500;background-color:#dbe7c9;box-shadow:0 0 10px #294b29,0 0 5px #294B29AA;line-height:1.5;border-radius:10px}#area:focus{border-color:#294b29;outline:0;box-shadow:0 0 5px #294B29AA,0 0 5px #294B29AA;border-radius:10px}#area::placeholder{color:#33443366}
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Nastaliq+Urdu:wght@400..700&display=swap');
+#area,
+#include {
+  max-width: 1000px;
+}
+@font-face {
+  font-family: Amiri;
+  src: url("../font/amiri_regular.ttf") format("truetype");
+  font-display: swap;
+}
+body {
+  font-family: Amiri, Arial, sans-serif;
+  background-color: #EFD9B9;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 8px auto;
+  width: 96%;
+  text-align: center;
+}
+.label-text {
+  font-size: 22px;
+  font-weight: bolder;
+  color: #262626;
+  margin-bottom: 8px;
+  margin-top: 12px;
+  display: block;
+  direction: rtl;
+}
+#include {
+  width: 100%;
+  margin-top: 20px;
+}
+#area {
+  border: 0.5px dotted #59331A;
+  color: #331900;
+  font-family: Amiri, Aptos, sans-serif;
+  font-size: 20px;
+  height: calc(100vh - 40px);
+  width: calc(100% - 20px);
+  padding: 12px;
+  resize: none;
+  overflow-y: scroll;
+  direction: rtl;
+  font-weight: 500;
+  background-color: #F8F2E5;
+  box-shadow: 0 0 10px #59331A, 0 0 5px #483425;
+  line-height: 1.5;
+  border-radius: 10px;
+}
+#area:focus {
+  border-color: #59331A;
+  outline: 0;
+  box-shadow: 0 0 5px #59331A, 0 0 5px #59331A;
+  border-radius: 10px;
+}
+#area::placeholder {
+  color: #483425;
+}

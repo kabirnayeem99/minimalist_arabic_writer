@@ -1,1 +1,16 @@
-function getElementById(e){return document.getElementById(e)}var input=getElementById("area");function saveTextToLocalStorage(e){localStorage.setItem("cached_text",e)}function setTextToTextArea(e){var t=getElementById("area");t.scrollTop=t.scrollHeight,t.value=e}function convertLatinToArabic(){var e=getElementById("area").value,e=event.target.value;e.slice(-1);var t={3:"ع",a:"ا",b:"ب",p:"ب",t:"ت",7:"ح",c:"ث",سس:"ث","ت'":"ث",j:"ج","ح'":"خ",x:"خ",5:"خ",k:"ك",d:"د","د'":"ذ",r:"ر",z:"ز","ر'":"ز",R:"ز",s:"س",ثه:"ش","س'":"ش",S:"ص",9:"ص","ص'":"ض",D:"ض","9'":"ض",T:"ط",6:"ط","ط'":"ظ",Z:"ظ","ع'":"غ",gه:"غ",f:"ف",v:"ف","ك'":"ق",K:"ق",q:"ق",l:"ل",m:"م",n:"ن",h:"ه",w:"و",o:"و",u:"و",y:"ي",i:"ي",e:"آ","و'":"ؤ",وء:"ؤ",ءي:"ئ","ء#":"ئ","ي'":"ئ","#":"ى",آآ:"ى",اءء:"إ",I:"إ",A:"إ",ءا:"أ","ا'":"أ",_:"ـ",2:"ء","-":"ء","ه'":"ة",H:"ة","ا=":"َ","و=":"ُ","ي=":"ِ","ون=":"ٌ","ين=":"ٍ","ان=":"ً",1:"أ"};Object.keys(t).forEach(function(a){e=e.replace(RegExp(a,"g"),t[a])}),setTextToTextArea(e),saveTextToLocalStorage(e)}window.onload=function(){var e=localStorage.getItem("cached_text");e&&setTextToTextArea(e)};
+function getElementById(e) {
+  return document.getElementById(e);
+}
+var input = getElementById("area");
+function saveTextToLocalStorage(e) {
+  localStorage.setItem("cached_text", e);
+}
+function setTextToTextArea(e) {
+  var t = getElementById("area");
+  (t.scrollTop = t.scrollHeight), (t.value = e);
+}
+
+window.onload = function () {
+  var e = localStorage.getItem("cached_text");
+  e && setTextToTextArea(e);
+};
