@@ -1,8 +1,8 @@
-const CACHE_NAME = "minimalistic_writer_cache_v1";
+const CACHE_NAME = "minimalistic_writer_cache_v2";
 const urlsToCache = [
   "/",
   "/index.html",
-  "/font/noto_naskh.ttf",
+  "/font/amiri_regular.ttf",
   "/css/style.css",
   "/js/script.js",
   "/manifest/icon-192x192.png",
